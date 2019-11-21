@@ -10,7 +10,7 @@ and display the results. As there are no tests, to register completion, run `lea
 
 ![giphy search](https://raw.githubusercontent.com/learn-co-curriculum/react-async-gif-search-lab/master/async.gif)
 
-## Getting Started
+## Getting Started  
 
 The URL for the API is
 
