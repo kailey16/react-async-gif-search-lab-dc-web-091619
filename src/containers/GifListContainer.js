@@ -11,6 +11,10 @@ class GifListContainer extends React.Component {
       search: ""
     }
   }
+  
+  componentDidUpdate() {
+    this.fetchGifs()
+  }
 
   fetchGifs = () => {
     fetch(`https://api.giphy.com/v1/gifs/search?q=`+`${this.state.search}`+`}&api_key=dc6zaTOxFJmzC&rating=g`)
@@ -30,7 +34,6 @@ class GifListContainer extends React.Component {
   }
 
   render() {
-    this.fetchGifs()
     return (
       <div>
         <GifSearch searchWithTerms={this.searchWithTerms} />
